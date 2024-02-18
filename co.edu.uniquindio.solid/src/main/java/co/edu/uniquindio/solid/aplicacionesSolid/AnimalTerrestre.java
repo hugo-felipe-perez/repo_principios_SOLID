@@ -7,8 +7,6 @@ package co.edu.uniquindio.solid.aplicacionesSolid;
  * @since 2024-02
  *
  */
-public class AnimalTerrestre {
-    void caminar(){
-
-    }
+public interface AnimalTerrestre {
+    void caminar();
 }

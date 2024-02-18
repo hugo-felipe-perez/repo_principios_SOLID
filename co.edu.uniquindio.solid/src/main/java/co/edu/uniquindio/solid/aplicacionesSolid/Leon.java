@@ -8,7 +8,7 @@ package co.edu.uniquindio.solid.aplicacionesSolid;
  *
  */
 
-public class Leon extends Animal {
+public class Leon extends Animal implements AnimalTerrestre {
     public Leon(String nombre) {
         super(nombre);
     }
