@@ -1,4 +1,4 @@
-package co.edu.uniquindio.solid.aplicacionesSolid;
+package co.edu.uniquindio.solid.aplicacionesSolid.service;
 
 /**
  * Clase que representa un AnimalTerrestre.

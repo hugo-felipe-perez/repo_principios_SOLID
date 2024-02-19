@@ -1,5 +1,7 @@
 package co.edu.uniquindio.solid.aplicacionesSolid;
 
+import co.edu.uniquindio.solid.aplicacionesSolid.service.AnimalTerrestre;
+
 /**
  * Clase que representa un Leon que extiende de la clase Animal.
  *
