@@ -41,15 +41,22 @@ public class Vehiculo {
     public String obtenerDetallesDelVehiculo() {
         return "Marca: " + marca + ", Modelo: " + modelo + ", Kilometraje: " + kilometraje;
     }
-    public void calcularCambioAceite (double kilometrajeActual){
+    public void calcularCambioAceite (){
         Scanner a = new Scanner(System.in);
-        System.out.println("Ingrese el kilometraje antes de cambio del cambio de aceite: ");
+        System.out.print("Ingrese el kilometraje antes de cambio del cambio de aceite: ");
         double kilometrajeAntesCambio = a.nextDouble();
-        if (kilometrajeActual >= kilometrajeAntesCambio + 5000){
+        if (kilometraje >= kilometrajeAntesCambio + 5000){
             System.out.println("¡¡ Debe hacer cambio de aceite !!");
-        }else {
-            System.out.println("Relajado");
         }
+        else if (kilometrajeAntesCambio > kilometraje) {
+            while (kilometrajeAntesCambio > kilometraje) {
+                Scanner b = new Scanner(System.in);
+                System.out.print("el kilometraje antes del cambio no puede ser mayor al actual, ingrese de nuevo: ");
+                kilometrajeAntesCambio = b.nextDouble();
+            }
+        }
+        System.out.println("Relajado");
+
     }
 
 
