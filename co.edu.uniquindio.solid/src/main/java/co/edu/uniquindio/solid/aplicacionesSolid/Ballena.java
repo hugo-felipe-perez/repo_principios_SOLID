@@ -1,6 +1,7 @@
 package co.edu.uniquindio.solid.aplicacionesSolid;
 
-import co.edu.uniquindio.solid.aplicacionesSolid.service.AnimalAcuatico;
+import co.edu.uniquindio.solid.aplicacionesSolid.service. IAnimalAcuatico;
+import co.edu.uniquindio.solid.aplicacionesSolid.service.IAnimalAcuatico;
 
 /**
  * Clase que representa un Pinguino que extiede de la clase Animal.
@@ -9,7 +10,7 @@ import co.edu.uniquindio.solid.aplicacionesSolid.service.AnimalAcuatico;
  * @since 2024-02
  *
  */
-public class Ballena extends Animal implements AnimalAcuatico {
+public class Ballena extends Animal implements IAnimalAcuatico {
     public Ballena(String nombre) {
         super(nombre);
     }

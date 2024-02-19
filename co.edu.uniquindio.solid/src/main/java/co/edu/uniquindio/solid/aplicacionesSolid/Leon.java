@@ -1,6 +1,7 @@
 package co.edu.uniquindio.solid.aplicacionesSolid;
 
-import co.edu.uniquindio.solid.aplicacionesSolid.service.AnimalTerrestre;
+import co.edu.uniquindio.solid.aplicacionesSolid.service.  IAnimalTerrestre;
+import co.edu.uniquindio.solid.aplicacionesSolid.service.IAnimalTerrestre;
 
 /**
  * Clase que representa un Leon que extiende de la clase Animal.
@@ -10,7 +11,7 @@ import co.edu.uniquindio.solid.aplicacionesSolid.service.AnimalTerrestre;
  *
  */
 
-public class Leon extends Animal implements AnimalTerrestre {
+public class Leon extends Animal implements IAnimalTerrestre {
     public Leon(String nombre) {
         super(nombre);
     }

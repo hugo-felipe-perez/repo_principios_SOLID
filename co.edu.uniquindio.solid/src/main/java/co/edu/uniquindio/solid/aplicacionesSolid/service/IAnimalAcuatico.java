@@ -1,5 +1,5 @@
 package co.edu.uniquindio.solid.aplicacionesSolid.service;
 
-public interface AnimalAcuatico {
+public interface IAnimalAcuatico {
     void nadar();
 }
