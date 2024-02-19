@@ -10,6 +10,14 @@ package co.edu.uniquindio.solid.aplicacionesSolid;
 public class Cuidador {
     private Animal animal;
 
+    public Animal getAnimal() {
+        return animal;
+    }
+
+    public void setAnimal(Animal animal) {
+        this.animal = animal;
+    }
+
     public Cuidador(Animal animal) {
         this.animal = animal;
     }
