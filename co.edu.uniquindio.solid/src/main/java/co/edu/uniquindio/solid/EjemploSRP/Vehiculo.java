@@ -1,5 +1,7 @@
 package co.edu.uniquindio.solid.EjemploSRP;
 
+import java.util.Scanner;
+
 // Clase Vehiculo con una sola responsabilidad
 public class Vehiculo {
     private String marca;
@@ -37,7 +39,17 @@ public class Vehiculo {
     }
 
     public String obtenerDetallesDelVehiculo() {
-        return "Marca: " + marca + ", Modelo: " + modelo + ",kilometraje";
+        return "Marca: " + marca + ", Modelo: " + modelo + ", Kilometraje: " + kilometraje;
+    }
+    public void calcularCambioAceite (double kilometrajeActual){
+        Scanner a = new Scanner(System.in);
+        System.out.println("Ingrese el kilometraje antes de cambio del cambio de aceite: ");
+        double kilometrajeAntesCambio = a.nextDouble();
+        if (kilometrajeActual >= kilometrajeAntesCambio + 5000){
+            System.out.println("¡¡ Debe hacer cambio de aceite !!");
+        }else {
+            System.out.println("Relajado");
+        }
     }
 
 
